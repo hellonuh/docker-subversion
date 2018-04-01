@@ -1,5 +1,5 @@
 FROM oraclelinux:7-slim
-LABEL maintainer="neyazul.haque@hellonuh.com"
+LABEL maintainer="nuhaque@gmail.com"
 
 RUN yum install -y httpd subversion mod_dav_svn && \
     yum clean all && rm -rf /var/cache/yum && \
