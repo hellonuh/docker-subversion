@@ -1,0 +1,12 @@
+[groups]
+admin = admin,jenkins
+public = readonly
+
+# admins have control over every project - and can list all projects on the root point
+[/]
+@admin = rw
+
+# everybody is able to read repos and sees all projects
+[/]
+#* = r
+@public = r
